@@ -1,12 +1,24 @@
+// Định nghĩa nội dung HTML dưới dạng chuỗi
+const htmlContent = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>abc</title>
+    <title>Trang Web Của Bạn</title>
 </head>
 <body>
-    abc
-    <script src="/src/index.js"></script>
+    <!-- Thêm một phần tử <div> để hiển thị nội dung từ index.js -->
+    <div id="app"></div>
 </body>
 </html>
+`;
+
+// Đặt nội dung HTML vào trang
+document.write(htmlContent);
+
+// Lấy tham chiếu đến phần tử có id là "app"
+const appElement = document.getElementById('app');
+
+// Render nội dung vào phần tử
+appElement.innerHTML = '<h1>Xin chào, đây là trang web của bạn!</h1>';
