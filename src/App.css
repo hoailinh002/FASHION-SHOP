@@ -28,6 +28,38 @@
   color: #61dafb;
 }
 
+
+
+/* SLIDER */
+
+.slider-wrapper {
+  position: relative;
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #ccc;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #aaa;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
